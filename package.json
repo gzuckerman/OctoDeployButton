@@ -1,0 +1,17 @@
+{
+  "name": "octodeployawsbutton",
+  "version": "1.0.0",
+  "description": "AWS IoT Button to deploy GitHub Releases",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "github"
+  ],
+  "author": "Gregory Zuckerman",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/rest": "^15.10.0"
+  }
+}
