@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "AWS IoT Button to deploy GitHub Releases",
   "main": "index.js",
+  "scripts": {
+  },
   "keywords": [
     "github"
   ],
