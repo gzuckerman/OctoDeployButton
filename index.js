@@ -1,15 +1,18 @@
 const octokit = require('@octokit/rest')()
 
+// custom GitHub Enterprise URL
+// baseUrl: 'https://api.github.com',
+
 octokit.authenticate({
   type: 'token',
-  token: process.env.GH_TOKEN
+  token: process.env.GITHUB_TOKEN
 })
 
 exports.handler = (event, context, callback) => {
   console.log(`Received event: ${event}`)
   let tag_name
-  const owner = process.env.GH_LOGIN
-  const repo = process.env.GH_REPO
+  const owner = process.env.GITHUB_LOGIN
+  const repo = process.env.GITHUB_REPO
 
   octokit.repos.getLatestRelease({
     owner,
