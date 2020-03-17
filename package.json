@@ -11,6 +11,6 @@
   "author": "Gregory Zuckerman",
   "license": "ISC",
   "dependencies": {
-    "@octokit/rest": "^16.35.2"
+    "@octokit/rest": "^17.0.0"
   }
 }
